@@ -1,0 +1,661 @@
+/*GLOBALES*/
+html {
+    font-size: 70.5%;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+body {
+    font-family: system-ui;
+}
+
+header {
+
+    background-color: #2830a1;
+    height: 110px;
+    position: fixed;
+    z-index: 99;
+    width: 100%
+}
+
+.logo {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 170px;
+}
+
+.container {
+    max-width: 1200px;
+    text-align: center;
+    margin: auto;
+}
+
+.header-section {
+    padding-top: 28px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    position: relative;
+}
+
+.header-section div {
+    position: relative;
+
+}
+
+.header-section p {
+    position: absolute;
+    top: -24px;
+    right: -8px;
+    background-color: #fff;
+    padding: 1px 6px;
+    border-radius: 50%;
+    color: red;
+    font-weight: 700;
+    font-family: system-ui;
+    line-height: 18px;
+}
+
+
+
+.slider {
+    padding-top: 110px;
+
+}
+
+.container i {
+    font-size: 1.6rem;
+    color: white;
+}
+
+.container h1 {
+    text-align: center;
+    color: #403B99;
+    font-size: 2.60rem;
+    padding: 10px;
+
+}
+
+.separador {
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    margin-top: -8px;
+}
+
+.separador hr {
+    width: 10%;
+    height: 6px;
+    margin-bottom: 12px;
+    background-color: #403B99;
+    opacity: 1;
+}
+
+/*formulario finalizar compra*/
+.form-register {
+    width: 400px;
+    background: #2830a1;
+    padding: 30px;
+    margin: auto;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    /*box-shadow: 7px 13px 37px #25b244;*/
+}
+
+.form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.controls {
+    width: 100%;
+    background: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #2830a1;
+    font-family: 'calibri';
+    font-size: 18px;
+
+}
+
+.form-register .botons {
+    width: 100%;
+    background: #403B99;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+/*fin formulario finalizar compra*/
+
+/*productos finales*/
+
+.finalizar-compra-container {
+    /*width: 960px;*/
+    display: none;
+    padding-bottom: 30px;
+    margin: auto;
+
+}
+
+.finalizar-compra-container h2 {
+    text-align: center;
+    color: #403B99;
+    font-size: 25px;
+}
+
+.finalizar-compra-container p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.contenedor-productos-finales {
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.contenedor-productos {
+    padding-right: 20px;
+}
+
+.contenedor-productos h2 {
+    font-size: 20px;
+}
+
+
+
+.cart-products {
+    position: absolute !important;
+    top: 74px;
+    right: -7px;
+    background-color: #fff;
+    padding: 0 15px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    display: none;
+    padding-bottom: 21px;
+    min-width: 290px;
+}
+
+#finalizar-compra {
+    background-color: #2830a1;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 12px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.cart:hover {
+    margin-bottom: 16px;
+    transition-duration: .5s;
+}
+
+/*fin header*/
+
+/*GRACIAS POR SU COMPRA*/
+.gracias {
+    margin: auto;
+    text-align: center;
+    display: none;
+    padding: 30px 0px 30px 0px;
+}
+
+.gracias h2 {
+    font-size: 28px;
+}
+
+.gracias p {
+    font-size: 22px;
+}
+
+.gracias a {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.productos {
+    /* margin-top: 60px; */
+    padding-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.title {
+    text-align: center;
+    color: #fc6121;
+    font-size: 1.9rem;
+    font-weight: bold;
+}
+
+.description {
+    color: #403B99;
+    text-align: center;
+    padding: 0.29999999rem;
+    font-size: 1.7rem;
+}
+
+.precio-product {
+    font-family: Verdana, Arial;
+    font-size: 1.5rem;
+    color: #AE1C33;
+    text-align: center;
+    padding-bottom: 0.3rem;
+}
+
+/*productos*/
+.carts {
+    width: 24%;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+.carts img {
+    width: 100%;
+}
+
+.carts p {
+    font-family: system-ui;
+    font-weight: 500;
+    padding: 0 10px;
+    margin-bottom: 15px;
+}
+
+.carts div p {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    background-color: red;
+    color: #fff;
+    padding: 2px 7px 4px 21px;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+
+.carts div {
+    position: relative;
+}
+
+.carts a {
+    background-color: transparent;
+    color: #848494;
+    padding: 5px 12px;
+    border: 3px double #e4e4e4;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.carts a:hover {
+    background: #fff;
+    color: red;
+    border: solid 2px red;
+    transition-duration: .3s;
+}
+
+/*float cart*/
+.cart-products .item img {
+    width: 115px;
+}
+
+.cart-products .item {
+    display: flex;
+    align-items: center;
+    border-bottom: solid 2px red;
+    width: 216px;
+}
+
+.cart-products .item .item-content {
+    margin: 0 19px;
+    width: 201px;
+}
+
+.cart-products .item .item-content h5 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: system-ui;
+}
+
+.cart-products .item .item-content h6 {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: system-ui;
+}
+
+.cart-products .item span {
+    background-color: red;
+    padding: 0px 5px;
+    border-radius: 50%;
+    color: #fff;
+    font-family: system-ui;
+    cursor: pointer;
+}
+
+.cart-products h3 {
+    margin-bottom: 0;
+}
+
+.cart-products .item .item-content h5.cart-price {
+    font-weight: 700;
+}
+
+/*Products finales*/
+
+.productos-finales .item img {
+    width: 115px;
+}
+
+.productos-finales .item {
+    display: flex;
+    align-items: center;
+    border-bottom: solid 2px red;
+}
+
+.productos-finales .item .item-content {
+    margin: 0 19px;
+    width: 201px;
+}
+
+.productos-finales .item .item-content h5 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: system-ui;
+}
+
+.productos-finales .item .item-content h6 {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: system-ui;
+}
+
+.productos-finales .item span {
+    background-color: red;
+    padding: 0px 5px;
+    border-radius: 50%;
+    color: #fff;
+    font-family: system-ui;
+    cursor: pointer;
+}
+
+.productos-finales h3 {
+    margin-bottom: 0;
+}
+
+.productos-finales .item .item-content h5.cart-price {
+    font-weight: 700;
+}
+
+
+
+/*btn close*/
+p.close-btn {
+    top: -4px;
+    right: 6px;
+    cursor: pointer;
+    color: #000;
+    font-size: 19px;
+}
+
+/*footer*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+footer {
+    width: 100%;
+    padding: 50px 0px;
+    font-family: 'Nunito', sans-serif;
+    /**background-color: var(--color-esqueleto);*/
+    background-image: url("images/background-footer.svg");
+    background-size: cover;
+}
+
+.container__footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.box__footer {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.box__footer .logo img {
+    width: 180px;
+}
+
+.box__footer .terms {
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #cdcfe9;
+    font-size: 18px;
+
+}
+
+.box__footer h2 {
+    margin-bottom: 30px;
+    color: white;
+    font-weight: 700;
+}
+
+.box__footer a {
+    margin-top: 10px;
+    color: #cdcfe9;
+    font-weight: 600;
+}
+
+.box__footer a:hover {
+    opacity: 0.8;
+    color: #FEBA0B;
+}
+
+.box__footer a .fab {
+    font-size: 20px;
+}
+
+.box__copyright {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box__copyright p {
+    margin-top: 20px;
+    color: #7a7a7a;
+}
+
+.box__copyright hr {
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+}
+
+
+/*MEDIA
+QUERIES*/
+
+@media (max-width: 860px) {
+
+    .container-products {
+        padding-top: 65px;
+
+    }
+
+    .separador hr {
+        width: 20%;
+
+    }
+
+    .contenedor-productos-finales {
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+
+    .contenedor-productos {
+        width: 80%;
+        margin: auto;
+    }
+
+    .form-register {
+        width: 95%;
+    }
+
+    .gracias {
+        padding-top: 100px;
+    }
+
+}
+
+
+
+@media (max-width: 780px) {
+
+    .separador hr {
+        width: 30%;
+
+    }
+
+    .slider {
+        height: 180px;
+    }
+
+    .slider img {
+        height: 180px;
+        object-fit: cover;
+    }
+
+    /*products*/
+    .carts {
+        width: 32%;
+    }
+
+    .finalizar-compra-container {
+        margin-top: 90px;
+    }
+
+    /*footer*/
+
+    .footer-block {
+        display: block;
+    }
+
+    .footer-nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .footer-nav ul li {
+        margin: 4px;
+    }
+
+    .footer-titulos {
+        text-align: center;
+    }
+
+    .importante {
+        margin: auto;
+    }
+
+    .importante p {
+        text-align: center;
+    }
+
+    .footer-redes {
+        padding-top: 7px
+    }
+}
+
+@media (max-width: 550px) {
+
+    .separador hr {
+        width: 50%;
+
+    }
+
+    /*Products*/
+    .carts {
+        width: 46%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+
+}
+
+@media (max-width: 370px) {
+
+    .contenedor-productos-finales {
+        width: 95%;
+    }
+
+    .finalizar-compra-container h2 {
+        font-size: 23px;
+    }
+
+    .contenedor-productos {
+        width: 100%;
+
+    }
+
+    .contenedor-productos h2 {
+        font-size: 18px;
+    }
+
+    .finalizar-compra-container p {
+        font-size: 17px;
+    }
+
+    .form-register {
+        width: 100%;
+        padding: 5px;
+    }
+
+    /*Products*/
+    .carts {
+        width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .importante {
+        width: 24rem;
+    }
+
+
+}

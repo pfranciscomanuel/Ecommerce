@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nutherbs</title>
+  <!--ICONOS FONTAWESOME-->
+  <script src="https://kit.fontawesome.com/43f3cc2ec8.js"></script>
+  <!--ESTILOS BOOTSTRAP-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+  <header>
+    <div class="header-section container">
+      <a class="logo" href=""><img src="images/products/LOGO_TECNM_BLANCO.svg" alt=""></a>
+      <div>
+        <i class="fa fa-cart-plus cart "></i>
+        <p class="cantidad-product">0</p>
+      </div>
+
+      <div class="cart-products" id="products-id">
+        <p class="close-btn">X</p>
+        <h3>Mi carrito</h3>
+        <div class="card-items">
+          <!-- <div class="item">
+                        
+                    </div> -->
+        </div>
+        <h2>Total:$<strong class="price-total">0</strong></h2>
+        <a id="finalizar-compra">Finalizar compra</a>
+      </div>
+    </div>
+  </header>
+
+  <!--INICIO SECTION SLIDER BOOSTRAP-->
+  <section class="slider">
+    <div class="slider-Boo">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/product-1.webp" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-md-block">
+              <h5>Los mejores productos</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/product-2.webp" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-md-block">
+              <h5>Productos de última generación</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/product-3.webp" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-md-block">
+              <h5>Productos que facilitan tu vida</h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <!--FIN SECTION SLIDER BOOSTRAP-->
+
+  <section class="finalizar-compra-container">
+    <h2>Finalizar compra</h2>
+    <div class="separador">
+      <hr>
+    </div>
+    <p>Por favor ingrese sus datos(datos por defecto)</p>
+
+    <div class="contenedor-productos-finales">
+
+      <div class="contenedor-productos">
+
+        <div class="productos-finales ">
+          <!--CARD PRODUCT-->
+
+          <!--FIN CARD PRODUCT-->
+        </div>
+        <hr>
+        <h2>Total a pagar:S/ <strong class="price-total-finales">0</strong></h2>
+
+      </div>
+
+
+      <div class="form-register">
+        <h4>Finalizar compra</h4>
+        <input class="controls" type="text" name="nombres" id="nombres" placeholder="Nombre: Elki Guerrero Castillo">
+        <input class="controls" type="text" name="direccion" id="direccion"
+          placeholder=" Dir: Calle Isacc Albeniz 331 San Borja">
+        <input class="controls" type="email" name="correo" id="correo" placeholder="Correo: elki.guerrero@nutherbs.com">
+        <input class="controls" type="password" name="correo" id="correo" placeholder="Pass: ************">
+        <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+        <input class="botons" type="submit" value="Finalizar compra">
+      </div>
+
+    </div>
+
+
+
+  </section>
+
+  <!--GRACIAS POR SU COMPRA-->
+  <section class="gracias">
+    <div class="contenedro-gracias">
+      <div>
+        <h2>Gracias por su compra</h2>
+        <p>¡El pago fue realizado con éxito!</p>
+        <p>Se le ha enviado un correo con los datos de su compra</p>
+
+      </div>
+      <a href="index.html">Ir a la tienda</a>
+
+    </div>
+
+
+
+
+  </section>
+
+  <section class="container container-products">
+    <h1>Los mejores productos tecnológicos</h1>
+    <div class="separador">
+      <hr>
+    </div>
+
+    <div class="productos" id="container-productos">
+      <!--<div class="carts">
+               
+            </div>-->
+
+    </div>
+  </section>
+
+  <!--FOOTER-->
+  <Footer id="pie">
+    <div class="container__footer">
+
+      <div class="box__footer">
+        <div class="logo">
+          <img src="images/products/LOGO_TECNM_BLANCO.svg" alt="">
+        </div>
+        <div class="terms" style="text-align: justify; font-weight: 100;">
+          Nuestros productos de presición han de sastifacer las expectativas de nuestros clientes y
+          proveedores, permitir remunerar adecuadamente a nuestros colaboradores y garantizar, gracias a
+          nuestro afán de superación.
+        </div>
+      </div>
+
+      <div class="box__footer">
+        <h2>Soluciones</h2>
+        <a href="#">App Desarrollo</a>
+        <a href="#">App Marketing</a>
+        <a href="#">IOS Desarrollo</a>
+        <a href="#">Android Desarrollo</a>
+        <a href="#">Instalaciones TI</a>
+        <a href="#">Administrador TI</a>
+      </div>
+
+
+      <div class="box__footer">
+        <h2>Contacto</h2>
+        <a href="https://www.facebook.com/pfranciscomanuel/"><i class="fab fa-facebook-square"></i>
+          Facebook</a>
+        <a href="https://www.instagram.com/pfranciscomanuel2019/"><i class="fab fa-instagram-square"></i>
+          Instagram</a>
+        <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
+        <a href="#"><i class="fab fa-google"></i> Gmail</a>
+        <a href="#"><i class="fab fa-telegram"></i> Telegram</a>
+        <a href="#"><i class="fab fa-whatsapp-square"></i> Whatsapp</a>
+      </div>
+    </div>
+
+    <div class="box__copyright">
+      <hr>
+      <p>Todos los derechos reservados © 2022 |<b> Equipo 2</b></p>
+    </div>
+  </Footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <!--LINK JQUERY-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
